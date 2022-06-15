@@ -1,0 +1,8 @@
+<?php
+include '../auth/koneksi.php';
+
+$query = mysqli_query($mysqli,"INSERT into tb_diskon (No,IdMember,Nama,Kd_Barang,Kd_Promo,Alamat,NoKtp)
+VALUES('','','','','','','')");
+
+header ("Location:data_diskon.php");
+?>

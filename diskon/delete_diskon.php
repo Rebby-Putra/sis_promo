@@ -1,0 +1,6 @@
+<?php
+include '../auth/koneksi.php';
+    $id = $_GET['id'];
+    $result = mysqli_query($mysqli, "DELETE FROM tb_diskon WHERE No=$id");
+    header("Location: data_diskon.php");
+?>
